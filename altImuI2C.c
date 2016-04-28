@@ -115,7 +115,7 @@ uint16_t i2с_read_seq_byte (uint8_t deviceAddr, uint8_t regStartAddr, uint8_t nu
 	return errCounter;
 }
 
-/*
+
 // прием и передача одного байта 
 void i2c_write_byte (uint8_t byte) {
 	I2C->TWIM_THR = byte; //TWIM_THR_TXDATA(data);
@@ -123,6 +123,7 @@ void i2c_write_byte (uint8_t byte) {
 uint8_t i2c_read_byte (void){
 	return I2C->TWIM_RHR;
 }
+/*
 // настройка модуля для передачи данных
 void i2c_start_write_ (uint8_t adr, uint8_t num) {
 	I2C->TWIM_CMDR =
