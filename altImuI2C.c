@@ -5,7 +5,7 @@
 #define DELAY_TICKS	2500 	// примерно 100 мкс при Fclk = 48 Mhz
 
 // сброс ошибок модуля I2C 
-void i2c_reset_errors (void) {
+static void i2c_reset_errors (void) {
 	
 	I2C->TWIM_SCR |= (TWIM_SCR_ANAK | TWIM_SCR_DNAK | TWIM_SCR_ARBLST | TWIM_SCR_HSMCACK | TWIM_SCR_CCOMP); // сбрасываем флаги ошибок
 }
