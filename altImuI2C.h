@@ -1,4 +1,4 @@
-#ifndef ALT_IMU_I2C_H_
+﻿#ifndef ALT_IMU_I2C_H_
 #define ALT_IMU_I2C_H_
 
 #include <asf.h>

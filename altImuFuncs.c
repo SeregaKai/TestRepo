@@ -4,7 +4,7 @@
 
 extern uint8_t *pErrorText; 
 
-// Значения регистров для инициализации датчиков 
+// ‡начение регистров для инициализации датчиков 
 static uint8_t g_init [5] = {
 	0b00111100, // частота обновлени¤ данных ODR = 95, внутренний фильтр Cut-off = 25, оси = Z
 	0b00000000,	// High-pass filter = Reference signal for filtering
